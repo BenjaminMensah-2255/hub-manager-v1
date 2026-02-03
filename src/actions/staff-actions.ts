@@ -11,7 +11,7 @@ export async function updateMyStatus(newStatus: string) {
         throw new Error("Unauthorized")
     }
 
-    // Validate status
+    // Validate statustt
     const validStatuses = ['Available', 'On Leave', 'Out of Office']
     if (!validStatuses.includes(newStatus)) {
         throw new Error("Invalid status")
